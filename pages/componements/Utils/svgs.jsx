@@ -44,7 +44,7 @@ export function Loupe(){
 
 import logo from '../../../public/Foot-Shop-Logo.jpg'
 
-export const Logo = (props) => {
+export default function Logo(props){
   return (
     <Image
       src={logo}
