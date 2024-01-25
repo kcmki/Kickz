@@ -59,9 +59,9 @@ function NewProds(){
     <h1 className="text-4xl font-bold text-white text-center pb-10">New Products</h1>
   <Slider {...settings}>
     {
-      newProducts.map((prod)=>{
+      newProducts.map((prod,key)=>{
         return(
-          <a href={prod.link} className="flex flex-col items-center justify-center h-64 w-24 p-2 text-white hover:bg-white hover:text-black transition rounded-xl">
+          <a key={key} href={prod.link} className="flex flex-col items-center justify-center h-64 w-24 p-2 text-white hover:bg-white hover:text-black transition rounded-xl">
             <div className='flex justify-center items-center h-3/5'><img src={prod.img} alt='tt' className="block rounded-xl h-full  w-auto" /></div>
             <div className="flex flex-col justify-center items-center h-2/5 w-full">
               <h1 className="text-xl font-bold">{prod.nom}</h1>
