@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import BackgroundFiller from './componements/BackgroundFiller'
+import BackgroundFiller from '@/pages/componements/BackgroundFiller'
 
 
 export default function Document() {

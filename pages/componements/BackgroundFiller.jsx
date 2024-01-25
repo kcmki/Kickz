@@ -6,7 +6,7 @@ function importAll(r) {
 
 export default function BackgroundFiller({}) {
 
-    let images = importAll(require.context('../../public/pngs/', false, /\d\.(png|jpe?g|svg)$/));
+    let images = importAll(require.context('@/public/pngs/', false, /\d\.(png|jpe?g|svg)$/));
 
 
     let nb = images.length

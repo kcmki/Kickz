@@ -42,9 +42,9 @@ export function Loupe(){
 }
 
 
-import logo from '../../../public/Foot-Shop-Logo.jpg'
+import logo from '@/public/Foot-Shop-Logo.jpg'
 
-export default function Logo(props){
+export function Logo(props){
   return (
     <Image
       src={logo}

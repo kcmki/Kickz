@@ -1,5 +1,5 @@
 
-import {BagIcon,User,Loupe,Logo} from './Utils/svgs'
+import {BagIcon,User,Loupe,Logo} from '@/pages/componements/Utils/svgs'
 import Image from 'next/image'
 
 export default function Header() {
@@ -76,7 +76,7 @@ function Bag({items}){
             <form action="" method="post" className='flex flex-col items-center text-black'>
                 <div className='flex flex-col h-36 overflow-y-scroll scrollbar  scrollbar-thumb-gray-200 scrollbar-track-black scrollbar-thin scrollbar-thumb-rounded'>
                 {
-                    items.map((item) => <BagItem image={item.image} name={item.nom} price={item.price} />)
+                    items.map((item,key) => <BagItem key={key} image={item.image} name={item.nom} price={item.price} />)
                 }
                 </div>
                 <input type="button" value="Checkout" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full' />

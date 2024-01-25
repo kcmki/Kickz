@@ -2,8 +2,8 @@
 
 import { Inter } from 'next/font/google'
 import { useState } from 'react'
-import Header from './componements/Header.jsx'
-import basket from '../public/basket.png'
+import Header from '@/pages/componements/Header.jsx'
+import basket from '@/public/basket.png'
 import Image from 'next/image.js'
 import "slick-carousel/slick/slick.css";
 
